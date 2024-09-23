@@ -1,0 +1,123 @@
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  header {
+    background: white;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+    margin-left: auto;
+    }  
+    .navbar {
+      background: linear-gradient( to right, #016b91d7 , #17a3d6d3);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border:  3px white;
+      margin-left: auto;
+    }
+    .logo{
+      margin-left: 0;
+      display: flex;
+      width: 100px;
+    }  
+    .logo img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .nav-links a.active-link {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+    }
+    .logo img:hover{
+        filter: drop-shadow(3px 3px 30px rgba(0,0,0, 0.5));
+        transform: scale(1.1);
+    }
+    .ancho{
+      display: flex;
+    }
+    .nav-links1{
+      display: flex;
+      margin-right: 30%;
+      margin-left: -10%;
+    }
+    .nav-links{
+      font-size: 2vh;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+    .nav-links a{
+      flex: 1;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: 0.5s;
+      text-shadow: 2px 2px 5px gray;
+    }
+  .nav-links a:hover {
+    background-color: #0c4f68b7;
+    font-weight: bold;
+  }
+  
+  /*//////////RESPONSIVE//////////*/
+  @media (max-width: 1000px) {
+    .menu-icon {
+      display: block;
+      margin-right: 10%;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;  /* Ajusta según sea necesario para evitar solapamiento con el encabezado */
+      background-color: #016b91d7;  /* Cambia al color que desees */
+      text-align: left;
+    }
+    .nav-links.show {
+      display: flex;
+      width:80%;
+      font-size: 140%;
+      margin-top: 10%;
+    }
+    .nav-links1{
+      margin-right: 0%;
+      margin-left: 0%;
+    }
+    .nav-links2{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .ancho{
+      width: 100%;
+      padding: 5%;
+    }
+    .nav-links1, .nav-links2{
+    display: flex;   
+    flex-wrap: wrap; 
+    }
+    
+  }
+@media (min-width: 540px) and (max-width: 1000px){
+  .nav-links.show{
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px){
+  .nav-links1{
+    display: flex;
+    margin-right: 20%;
+  }
+}
+  
+.mb-10{
+  margin-bottom: 10px;
+}

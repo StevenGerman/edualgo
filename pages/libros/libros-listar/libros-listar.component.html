@@ -1,0 +1,74 @@
+<div class="card m-5">
+    <div class="card-header">Listado de Libros</div>
+    <div class="card-body">
+        <div
+            class="table-responsive"
+        >
+            <table
+                class="table table-striped"
+            >
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Año</th>
+                        <th>Signatura Topográfica</th>
+                        <th>Editorial</th>
+                        <th>Materia</th>
+                        <th>Contenido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let lib of Libros">
+                        <td>{{ lib.libTitulo }}</td>
+                        <td>{{ lib.AutorID }}</td>
+                        <td>{{ lib.libAnio }}</td>
+                        <td>{{ lib.SigTopograficaID }}</td>
+                        <td>{{ lib.EditorialID }}</td>
+                        <td>{{ lib.MateriaID }}</td>
+                        <td>{{ lib.libNotaContenido }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--
+<div class="libros-listar-container mt-5">
+    <h2 class="text-center">Lista de Libros</h2>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Signatura Topográfica</th>
+                <th>Editorial</th>
+                <th>Materia</th>
+                <th>Contenido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let lib of libros">
+                <td>{{ lib.libTitulo }}</td>
+                <td>{{ lib.AutorID }}</td>
+                <td>{{ lib.libAnio }}</td>
+                <td>{{ lib.SigTopograficaID }}</td>
+                <td>{{ lib.EditorialID }}</td>
+                <td>{{ lib.MateriaID }}</td>
+                <td>{{ lib.libNotaContenido }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+-->

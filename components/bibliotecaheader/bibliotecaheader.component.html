@@ -1,0 +1,40 @@
+<header class="mb-10">
+    <div class="espacio"></div>
+    <div class="navbar">
+      <div class="logo">
+        <a href="https://enssagarna-ers.infd.edu.ar/sitio/" target="_blank"><img src="assets/img/logoNormal.png" alt="Logo"></a>
+      </div>
+      
+      <div class="menu-icon" (click)="toggleMenu()">
+        &#9776;
+      </div>
+
+      <div class="nav-links" [class.show]="isMenuOpen" (click)="closeMenu()">
+        <div class="nav-links1">
+        <div class="ancho"><a routerLink="inicio" routerLinkActive="active-link">Inicio</a></div>
+      </div>
+        <div class="nav-links2">
+        <a routerLink="login" id="login" routerLinkActive="active-link">Iniciar sesión</a>
+        </div>
+      </div>  
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

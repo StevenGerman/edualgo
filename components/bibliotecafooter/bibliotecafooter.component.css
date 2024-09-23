@@ -1,0 +1,112 @@
+    /*///////////REDES SOCIALES//////////*/
+    .footer_redes_sociales{
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 2rem 8%;
+        background: linear-gradient( to right, rgba(1,1,1,0.7), rgba(1,1,1,0.9));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white; 
+    }
+    .icono_texto{
+      width: 50%;
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns: 15% 85%;
+      margin: 0;
+      justify-content: center;
+    }
+    .i1{
+      grid-row: 1/4;
+    }
+    .i2{
+      grid-row: 2/1;
+    }
+    .i3{
+      grid-row: 2/2;
+    }
+    .i4{
+      grid-row: 3/4;
+    }
+    
+    /*/////LOGO/////*/
+    .footer_redes_sociales img{
+        width: 100%;
+        filter: drop-shadow(1px 1px 20px rgba(0,0,0, 1));
+        transition: 0.5s;
+    }
+    .footer_redes_sociales img:hover{
+        filter: drop-shadow(3px 3px 30px rgba(255,255,255, 1));
+    }
+    /*/////GENERAL/////*/
+    .redes_sociales{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .iconos_redes_sociales{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        margin: 1rem;
+        margin-bottom: 0%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    /*FACEBOOK*/
+    #facebook{
+        font-size: 35px;
+        background-color: #fff;
+        color: #1977f3;
+        transition: 0.5s;
+        margin-left: 3px;
+    }
+    #facebook:hover{
+        background-color: #1977f3;
+        color: #fff;
+    }
+    /*INSTAGRAM*/
+    #instagram{
+        font-size: 35px;
+        background-color: #fff;
+        color: #7849d3;
+        transition: 0.5s;
+    }
+    #instagram:hover{
+        background-color: #7849d3;
+        color: #fff;
+    }
+    /*YOUTUBE*/
+    #youtube{
+        background-color: #fff ;
+        color: #ff0000 ;
+        transition: 0.5s;
+        font-size: 32px;
+    }
+    #youtube:hover{
+        background-color: #ff0000 ;
+        color: #fff ;
+    }
+    @media (max-width: 768px) {
+      .icono_texto{
+        width: 90%;
+      }
+      .grid-container{
+        font-size: 65%;
+        margin-top: 0;
+      } 
+      .footer_redes_sociales{
+        padding: 5rem 0%;
+    }
+    
+    .redes_sociales{
+      padding: 1rem 0%;
+    }
+  }

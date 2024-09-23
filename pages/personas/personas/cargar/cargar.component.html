@@ -1,0 +1,25 @@
+<form (ngSubmit)="agregarPersona()">
+    <label>Nombre:</label>
+    <input [(ngModel)]="nuevaPersona.perNombre" name="perNombre" required>
+  
+    <label>Apellido:</label>
+    <input [(ngModel)]="nuevaPersona.perApellido" name="perApellido" required>
+  
+    <label>Teléfono:</label>
+    <input [(ngModel)]="nuevaPersona.perTelefono" name="perTelefono" required>
+  
+    <label>Domicilio:</label>
+    <input [(ngModel)]="nuevaPersona.perDomicilio" name="perDomicilio" required>
+  
+    <label>Email:</label>
+    <input [(ngModel)]="nuevaPersona.perMail" name="perMail" required>
+  
+    <label>Localidad ID:</label>
+    <input [(ngModel)]="nuevaPersona.localidadID" name="localidadID" required>
+  
+    <label>Rol ID:</label>
+    <input [(ngModel)]="nuevaPersona.rolID" name="rolID" required>
+  
+    <button type="submit">Agregar Persona</button>
+  </form>
+  
